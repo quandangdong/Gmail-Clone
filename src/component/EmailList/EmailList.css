@@ -3,6 +3,16 @@
     overflow: scroll;
 }
 
+/* hide scrollbar for chrom, Safari */
+.emailList::-webkit-scrollbar{
+    display: none;
+}
+
+/* hide scrollbar for IE, Edge and opera */
+.emailList {
+    scrollbar-width: none;
+}
+
 .emailList_setting {
     position: sticky;
     top: 0;

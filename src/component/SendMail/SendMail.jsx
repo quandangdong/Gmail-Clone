@@ -19,8 +19,6 @@ const SendMail = () => {
   const dispatch = useDispatch();
 
   const onSubmit = async (data) => {
-    console.log("data ne: ", data);
-
     try {
       await addDoc(collection(db, "emails"), {
         to: data.to,
